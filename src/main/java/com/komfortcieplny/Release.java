@@ -5,7 +5,12 @@ public class Release {
     private int year;
     private String title;
     private String artists_sort;
-    private  String country;
+    private String country;
+    private String[] styles;
+
+    public String[] getStyles() {
+        return styles;
+    }
 
     public long getId() {
         return id;
@@ -34,6 +39,7 @@ public class Release {
                 "Title: <b>" + title +  "</b><br>" +
                 "Artists: <b>" + artists_sort +  "</b><br>" +
                 "Country: " + country + "<br>" +
-                "Year: " + year;
+                "Year: " + year + "<br>" +
+                "Style: " + styles[0];
     }
 }
